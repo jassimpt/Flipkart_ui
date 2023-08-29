@@ -167,6 +167,181 @@ class _HomePageState extends State<HomePage> {
                           dotColor: Colors.grey)),
                 )
               ],
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 10),
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: Color.fromARGB(255, 240, 239, 239),
+                          radius: 30,
+                          child: Image.asset(
+                            'assets/images/camera.png',
+                            width: 40,
+                            height: 40,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          'Camera',
+                          style: TextStyle(
+                              fontSize: 10, fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: Color.fromARGB(255, 240, 239, 239),
+                          radius: 30,
+                          child: Image.asset(
+                            'assets/images/coupons.png',
+                            width: 40,
+                            height: 40,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          'Coupons',
+                          style: TextStyle(
+                              fontSize: 10, fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: Color.fromARGB(255, 240, 239, 239),
+                          radius: 30,
+                          child: Image.asset(
+                            'assets/images/creditcard.png',
+                            width: 40,
+                            height: 40,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          'Creditcards',
+                          style: TextStyle(
+                              fontSize: 10, fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: Color.fromARGB(255, 240, 239, 239),
+                          radius: 30,
+                          child: Image.asset(
+                            'assets/images/Flipkart-SuperCoin.png',
+                            width: 40,
+                            height: 40,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          'Supercoin',
+                          style: TextStyle(
+                              fontSize: 10, fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: Color.fromARGB(255, 240, 239, 239),
+                          radius: 30,
+                          child: Image.asset(
+                            'assets/images/flipkartplus-bg.png',
+                            width: 40,
+                            height: 40,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          'Flipkart +',
+                          style: TextStyle(
+                              fontSize: 10, fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: Color.fromARGB(255, 240, 239, 239),
+                          radius: 30,
+                          child: Image.asset(
+                            'assets/images/groupbuy.png',
+                            width: 40,
+                            height: 40,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          'Group Buy',
+                          style: TextStyle(
+                              fontSize: 10, fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+                    Column(
+                      children: [
+                        CircleAvatar(
+                          backgroundColor: Color.fromARGB(255, 240, 239, 239),
+                          radius: 30,
+                          child: Image.asset(
+                            'assets/images/joystick.png',
+                            width: 40,
+                            height: 40,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        Text(
+                          'Games',
+                          style: TextStyle(
+                              fontSize: 10, fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
             )
           ],
         ),
