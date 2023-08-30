@@ -65,6 +65,21 @@ flutter:
     - assets\images\flipkartplus-bg.png
     - assets\images\groupbuy.png
     - assets\images\joystick.png
+    - assets\images\laptop-sm (1).png
+    - assets\images\grocery.png
+    - assets\images\boat (1).png
+    - assets\images\bg.jpg
+    - assets\images\tv.jpg
+    - assets\images\protein.jpg
+    - assets\images\keyboards-final.jpg
+    - assets\images\headphones.jpg
+    - assets\images\bedsheet.jpg
+    - assets\images\gaming laptop.jpg
+    - assets\images\bota.jpg
+    - assets\images\jbl.jpg
+    - assets\images\iPhone-14.jpg
+    - assets\images\firebolt.jpg
+    - assets\images\voltas.jpg
     # - assets\images\flipkart logo name.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
