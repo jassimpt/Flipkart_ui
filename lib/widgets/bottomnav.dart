@@ -38,15 +38,26 @@ class _BottomnavState extends State<Bottomnav> {
         onTap: _bottomnavigator,
         type: BottomNavigationBarType.fixed,
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.category_outlined), label: 'Categories'),
+              icon: Image.asset('assets/icons/home.png',
+                  height: 25, color: Color.fromARGB(255, 4, 97, 236)),
+              label: 'Home'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.notifications), label: 'Notifications'),
+              icon: Image.asset('assets/icons/search.png',
+                  height: 25, color: Color.fromARGB(255, 4, 97, 236)),
+              label: 'Categories'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.account_circle_outlined), label: 'Account'),
+              icon: Image.asset('assets/icons/notification.png',
+                  height: 25, color: Color.fromARGB(255, 4, 97, 236)),
+              label: 'Notifications'),
           BottomNavigationBarItem(
-              icon: Icon(Icons.shopping_cart_outlined), label: 'Cart'),
+              icon: Image.asset('assets/icons/user.png',
+                  height: 25, color: Color.fromARGB(255, 4, 97, 236)),
+              label: 'Account'),
+          BottomNavigationBarItem(
+              icon: Image.asset('assets/icons/add-cart.png',
+                  height: 25, color: Color.fromARGB(255, 4, 97, 236)),
+              label: 'Cart'),
         ],
       ),
     );
