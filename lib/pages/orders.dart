@@ -1,6 +1,5 @@
 import 'dart:ffi';
 
-import 'package:flipkart_ui/pages/cart.dart';
 import 'package:flutter/material.dart';
 
 class Myorders extends StatelessWidget {
@@ -89,59 +88,110 @@ class Myorders extends StatelessWidget {
               ],
             ),
           ),
-          Container(
-            width: MediaQuery.of(context).size.width,
-            height: 150,
-            decoration: BoxDecoration(
-                color: Colors.white,
-                border: Border(
-                    bottom: BorderSide(color: Color.fromRGBO(0, 0, 0, 0.2)))),
-            child: Row(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.only(bottom: 40),
-                  child: Image.asset(
-                    'assets/images/laptop-sm (1).png',
-                    height: 100,
-                  ),
-                ),
-                SizedBox(
-                  width: 10,
-                ),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    SizedBox(
-                      height: 25,
-                    ),
-                    Text(
-                      'Delivered on Aug 12',
-                      style:
-                          TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text('HP 247 G8 Ryzen 3..'),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Image.asset(
-                      'assets/icons/rating.png',
-                      height: 20,
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Text('Rate this product now')
-                  ],
-                ),
-                Text('>')
-              ],
+          Expanded(
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  OrderedItems(context,
+                      image: 'assets/images/laptop-sm (1).png',
+                      imgheight: 100,
+                      txt1: 'Delivered on Aug 12',
+                      txt2: 'HP 247 G8 Ryzen 3..',
+                      arrspace: 140),
+                  OrderedItems(context,
+                      image: 'assets/images/gymbag (1).png',
+                      imgheight: 70,
+                      txt1: 'Delivered on Apr 17',
+                      txt2: 'MONVELLI Gym Bag',
+                      arrspace: 130),
+                  OrderedItems(context,
+                      image: 'assets/images/builders.png',
+                      imgheight: 100,
+                      txt1: 'Delivered on Apr 10',
+                      txt2: 'HOTFITS Solid Men Round...',
+                      arrspace: 100),
+                  OrderedItems(context,
+                      image: 'assets/images/14pro.png',
+                      imgheight: 110,
+                      txt1: 'Delivered on Mar 22',
+                      txt2: 'IPHONE 14 Pro...',
+                      arrspace: 150),
+                  OrderedItems(context,
+                      image: 'assets/images/aripodsmax.png',
+                      imgheight: 100,
+                      txt1: 'Delivered on Oct25',
+                      txt2: 'APPLE New AirPods Max',
+                      arrspace: 120)
+                ],
+              ),
             ),
           )
         ],
       ),
     ));
+  }
+
+  Container OrderedItems(BuildContext context,
+      {required String image,
+      required double imgheight,
+      required String txt1,
+      required String txt2,
+      required double arrspace}) {
+    return Container(
+      width: MediaQuery.of(context).size.width,
+      height: 150,
+      decoration: BoxDecoration(
+          color: Colors.white,
+          border:
+              Border(bottom: BorderSide(color: Color.fromRGBO(0, 0, 0, 0.2)))),
+      child: Row(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(bottom: 40),
+            child: Image.asset(
+              image,
+              height: imgheight,
+            ),
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              SizedBox(
+                height: 25,
+              ),
+              Text(
+                txt1,
+                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Text(txt2),
+              SizedBox(
+                height: 10,
+              ),
+              Image.asset(
+                'assets/icons/rating.png',
+                height: 20,
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Text('Rate this product now')
+            ],
+          ),
+          SizedBox(
+            width: arrspace,
+          ),
+          Image.asset(
+            'assets/icons/next.png',
+            height: 15,
+          )
+        ],
+      ),
+    );
   }
 }

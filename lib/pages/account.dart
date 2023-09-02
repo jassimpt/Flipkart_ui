@@ -16,38 +16,38 @@ class Account extends StatelessWidget {
           title: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 'Hey! Jassim Pt',
                 style:
                     TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 8,
               ),
               Row(
                 children: [
-                  Text(
+                  const Text(
                     'Explore',
                     style: TextStyle(
                         fontSize: 15,
                         color: Color.fromARGB(255, 170, 170, 170)),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 5,
                   ),
                   Image.asset(
                     'assets/images/flipkartplus-bg.png',
                     height: 15,
                   ),
-                  Text(
+                  const Text(
                     'Plus',
                     style: TextStyle(
                         fontSize: 15, color: Color.fromARGB(255, 4, 97, 236)),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 5,
                   ),
-                  Text(
+                  const Text(
                     '>',
                     style: TextStyle(fontSize: 15, color: Colors.black),
                   )
@@ -123,7 +123,7 @@ class Account extends StatelessWidget {
                 height: 120,
                 decoration: BoxDecoration(color: Colors.white),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 8,
               ),
               Container(

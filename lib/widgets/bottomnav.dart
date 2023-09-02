@@ -1,5 +1,6 @@
 import 'package:flipkart_ui/pages/account.dart';
 import 'package:flipkart_ui/pages/cart.dart';
+
 import 'package:flipkart_ui/pages/categories.dart';
 import 'package:flipkart_ui/pages/home.dart';
 import 'package:flipkart_ui/pages/notifications.dart';
